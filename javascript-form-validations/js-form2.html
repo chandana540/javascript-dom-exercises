@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>demo on js validation</title>
+    <script type="text/javascript">
+    function validate_form() {
+        valid = true;
+console.log(contact_form.contact_name)
+        if (document.contact_form.contact_name.value == "") {
+        	
+            alert("Please fill in the 'Your Name' box.");
+            valid = false;
+            contact_form.contact_name.focus();
+      
+        }
+        return valid;
+    }
+    </script>
+</head>
+
+<body>
+
+    <form name="contact_form" method="post" action="" onSubmit="return validate_form();">
+
+        <h1>Please Enter Your Details Below</h1>
+
+        <p>Your Name: <input type="text" name="contact_name"></p>
+
+        <input type="submit" name="">
+
+    </form>
+
+</body>
+
+</html>
