@@ -1,0 +1,45 @@
+<html>
+    <head> 
+        </head>
+        <body>
+          
+            <input id="btn"  class="btn1" type="button" value=Hide>
+            <input class="btnbtn" type="button" value=show >
+      
+        </body>
+        <script>
+        var btn=document.querySelectorAll('input[type="button"]')
+        //console.log(btn)
+       // console.log(btn[0]);
+        //var btn=document.getElementById("btn")
+        for(var i=0;i<btn.length;i++)
+       {
+    btn[i].addEventListener('click', myfunction);
+   function  myfunction(e)             //e means event parameter= click
+    {
+        var a=document.createElement("p")
+        var b=document.createTextNode("this normal paragraph")
+        a.append(b)                 // console.log(a)
+                                    // console.log(e.type);
+                                       // console.log(e.target);
+                                        // console.log(e.target.className)
+     
+    if (e.target.id=="btn")
+     {
+      document.body.append(a);
+          a.innerHTML=" ";              // check for a.innerHtml= "enter some text"
+     
+     }
+     
+    else if (e.target.className=="btnbtn")
+     {
+       document.body.append(a);
+
+     }
+    }
+}
+
+    
+        </script>
+    </head>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title>create element h1 inside div</title>
+</head>
+<body>
+    <div class="wrapper">
+        <p>chandana</p>
+        <div class="first-div">
+            <p>chandana chowdary</p>
+          <ol class="list">
+              <li class="list1">1</li>
+              <li class="list1">2</li>
+              <li class="list1">3</li>
+              <ul>
+                  <li class="list">1111111</li>
+              </ul>
+          </ol>
+        </div>
+    </div>
+    <script>
+
+var a=document.createElement("h1")
+var b=document.createTextNode("hi ,chandana")
+a.append(b)
+// console.log(a)
+var c=document.getElementsByClassName("list1")
+ //console.log(c)
+
+
+ //document.body.append(a)
+ document.body.c.insertAdjacentHTML('afterbegin',a)
+//c.insertAdjacentHTML("li",a)
+
+
+// var d=document.getElementsByClassName("list")
+// console.log(d[0])
+// var e=document.getElementsByClassName("list1")
+// console.log(e[2])
+
+
+    </script>
+</body>
+</html?

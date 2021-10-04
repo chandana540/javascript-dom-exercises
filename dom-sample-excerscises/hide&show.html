@@ -1,0 +1,26 @@
+<html>
+    <head></head>
+        <body>
+          
+            <input id="btn"  class="btn1" type="button" value=Hide onclick="hidepara()">
+            <input  id="btnbtn" class="btn1" type="button" value=show  onclick="showpara()">
+      
+        </body>
+        <script>
+            
+        var a=document.createElement("p")
+        var b=document.createTextNode("this normal paragraph")
+        a.append(b
+        )
+        function hidepara()
+        {
+
+            a.innerHTML=""
+        
+        }
+        function showpara()
+        {
+        
+            document.body.append(a);
+        }
+            </script>
